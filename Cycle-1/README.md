@@ -1,2 +1,2 @@
 # Oops_lab
-Consists Basci Java Programs.
+Consists Basic Java Programs.
