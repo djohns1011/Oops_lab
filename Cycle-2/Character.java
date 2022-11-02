@@ -12,7 +12,6 @@ public class Character {
             else {
                 System.out.println(ch + " is not present in " + str);
             }
-
+        }
     }
-}
 }
