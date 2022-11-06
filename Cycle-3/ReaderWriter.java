@@ -7,20 +7,18 @@ import java.util.Scanner;
 public class ReaderWriter {
     public static void main(String [] args) throws IOException{
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Enter the data: ");
+            System.out.print("Enter the data: ");
             String str = sc.nextLine();
 
             FileWriter fw = new FileWriter("output.txt");
 
-            for (int i = 0; i < str.length(); i++){
-                fw.write(str.charAt(i)) ;
-            }
+            fw.write(str);
             System.out.println("Writing successful");
             fw.close();
         }
         try {
             FileReader fr = new FileReader("output.txt");
-            System.out.println("Content of the file: ");
+            System.out.print("Content of the file: ");
             int i = 0;
             while((i = fr.read()) != -1) 
             {

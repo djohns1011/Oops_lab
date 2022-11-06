@@ -9,11 +9,11 @@ public class Garbage {
 
         long memoryBeforeObjectCreation= r.freeMemory();
 
-        Garbage g = new Garbage();
+        //Garbage g = new Garbage();
 
         long memoryAfterObjectCreation = r.freeMemory();
 
-        g = null;
+        //g = null;
 
         long memoryAfterObjectSetToNull = r.freeMemory();
 
