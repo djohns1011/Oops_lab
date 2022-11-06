@@ -18,6 +18,19 @@ public class ReaderWriter {
             System.out.println("Writing successful");
             fw.close();
         }
+        try {
+            FileReader fr = new FileReader("output.txt");
+            System.out.println("Content of the file: ");
+            int i = 0;
+            while((i = fr.read()) != -1) 
+            {
+                System.out.print((char)i);
+            }
+            fr.close();
+        }
+        catch(IOException e){
+            System.out.println(" an Error occurred");
+        }
     }
 }
 //
